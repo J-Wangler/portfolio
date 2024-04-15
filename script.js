@@ -5,7 +5,6 @@ const textoDescricao = "Olá, meu nome é João Wängler, Sou estudante de Engen
 
 let index = 0;
 
-// Função para adicionar letra por letra ao texto do título
 function digitarTitulo() {
     titulo.textContent += textoTitulo[index];
     index++;
@@ -17,7 +16,6 @@ function digitarTitulo() {
     }
 }
 
-// Função para adicionar letra por letra ao texto da descrição
 function digitarDescricao() {
     descricao.textContent += textoDescricao[index - textoTitulo.length];
     index++;
@@ -26,5 +24,4 @@ function digitarDescricao() {
     }
 }
 
-// Chama a função para iniciar a digitação do título
 digitarTitulo();
