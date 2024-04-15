@@ -1,7 +1,7 @@
 const titulo = document.getElementById('titulo');
 const descricao = document.getElementById('descricao');
 const textoTitulo = "Sobre mim:";
-const textoDescricao = "Olá, meu nome é João Wängler, Sou estudante de Engenharia de Software na Universidade de Vassouras. Apaixonado por tecnologia desde sempre, estou sempre buscando aprender e aplicar novos conhecimentos na área. ";
+const textoDescricao = "Meu nome é João Wängler, Sou estudante de Engenharia de Software na Universidade de Vassouras. Apaixonado por tecnologia, estou sempre buscando aprender e aplicar novos conhecimentos na área. ";
 
 let index = 0;
 
