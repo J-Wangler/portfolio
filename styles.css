@@ -1,5 +1,6 @@
 body {
     font-family: "Lucida Console", Monaco, monospace;
+    font-size: larger;
     background-color: #1f1f1f;
     color: #fff;
     margin: 0;
@@ -7,16 +8,16 @@ body {
 }
  
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    content: "\2022"; /* Código Unicode para uma bolinha */
+    content: "\2022";
     margin-right: 0.5em; /* Espaçamento entre a bolinha e o texto */
     color: #18c712; /* Cor da bolinha */
 }
 
 header {
-    background-color: #333;
+    background-color: #131212;
     padding: 20px;
-    border-bottom: 2px solid #c10bd1; /* Adiciona uma borda inferior colorida */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    border-bottom: 2px solid  #23a817; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 header h1 {
@@ -40,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f8d73f;
+    color: #23a817;
 }
 
 section {
@@ -55,8 +56,8 @@ footer {
 }
 
 .links-box {
-    background-color: #333; /* Cor de fundo escura */
-    border: 2px solid #f8d73f; /* Contorno colorido */
+    background-color: #222222; /* Cor de fundo escura */
+    border: 2px solid  #23a817; /* Contorno colorido */
     border-radius: 5px; /* Borda arredondada */
     padding: 20px; /* Espaçamento interno */
     margin-top: 20px; /* Margem superior */
@@ -71,5 +72,5 @@ footer {
 }
 
 .links-box a:hover {
-    background-color: #f8d73f; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #23a817; /* Altera a cor de fundo ao passar o mouse */
 }
