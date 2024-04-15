@@ -1,0 +1,75 @@
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+ 
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    content: "\2022"; /* Código Unicode para uma bolinha */
+    margin-right: 0.5em; /* Espaçamento entre a bolinha e o texto */
+    color: #18c712; /* Cor da bolinha */
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    border-bottom: 2px solid #c10bd1; /* Adiciona uma borda inferior colorida */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+header h1 {
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f8d73f;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.links-box {
+    background-color: #333; /* Cor de fundo escura */
+    border: 2px solid #f8d73f; /* Contorno colorido */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+}
+
+.links-box a {
+    display: block; /* Transforma os links em blocos para ocupar a largura total */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+.links-box a:hover {
+    background-color: #f8d73f; /* Altera a cor de fundo ao passar o mouse */
+}
