@@ -9,8 +9,8 @@ body {
  
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     content: "\2022";
-    margin-right: 0.5em; /* Espaçamento entre a bolinha e o texto */
-    color: #18c712; /* Cor da bolinha */
+    margin-right: 0.5em; 
+    color: #18c712; 
 }
 
 header {
@@ -56,21 +56,21 @@ footer {
 }
 
 .links-box {
-    background-color: #222222; /* Cor de fundo escura */
-    border: 2px solid  #23a817; /* Contorno colorido */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno */
-    margin-top: 20px; /* Margem superior */
+    background-color: #222222;
+    border: 2px solid  #23a817;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px; 
 }
 
 .links-box a {
-    display: block; /* Transforma os links em blocos para ocupar a largura total */
-    color: #fff; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado */
-    padding: 10px 0; /* Espaçamento interno */
-    font-size: 18px; /* Tamanho da fonte */
+    display: block; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    font-size: 18px;
 }
 
 .links-box a:hover {
-    background-color: #23a817; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #23a817; 
 }
