@@ -1,44 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+const titulo = document.getElementById('titulo');
+const descricao = document.getElementById('descricao');
+const textoTitulo = "Sobre mim:";
+const textoDescricao = "Olá, meu nome é João Wängler, Sou estudante de Engenharia de Software na Universidade de Vassouras. Apaixonado por tecnologia desde sempre, estou sempre buscando aprender e aplicar novos conhecimentos na área. ";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Wängler - Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+let index = 0;
 
-<body>
-    <header>
-        <h1>João Wängler</h1>
-    </header>
+// Função para adicionar letra por letra ao texto do título
+function digitarTitulo() {
+    titulo.textContent += textoTitulo[index];
+    index++;
+    if (index < textoTitulo.length) {
+        setTimeout(digitarTitulo, 40); // Altere o tempo de espera para ajustar a velocidade da digitação
+    } else {
+        // Chama a função para iniciar a digitação da descrição após a digitação do título ser concluída
+        setTimeout(digitarDescricao, 1000); // Espera 1.5 segundos antes de iniciar a digitação da descrição
+    }
+}
 
-    <section id="sobre">
-        <h2 id="titulo"></h2>
-        <p id="descricao"></p>
-    </section>
+// Função para adicionar letra por letra ao texto da descrição
+function digitarDescricao() {
+    descricao.textContent += textoDescricao[index - textoTitulo.length];
+    index++;
+    if (index < textoTitulo.length + textoDescricao.length) {
+        setTimeout(digitarDescricao, 40); // Altere o tempo de espera para ajustar a velocidade da digitação
+    }
+}
 
-    <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <div class="links-box">
-            <a href="https://j-wangler.github.io/acai/">Açaíteria</a>
-            <a href="https://j-wangler.github.io/classicburger/">Hamburgueria</a>
-            <a href="https://j-wangler.github.io/Led-site/">Led Zeppelin Page</a>
-            <a href="https://j-wangler.github.io/Serenity-flow/">Página de Yoga</a>
-            <a href="https://j-wangler.github.io/Curriculo/">Currículo</a>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Você pode me contatar através do email: wanglermf@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 João Wängler.</p>
-    </footer>
-    
-    <script src="script.js"></script>
-</body>
-
-</html>
+// Chama a função para iniciar a digitação do título
+digitarTitulo();
